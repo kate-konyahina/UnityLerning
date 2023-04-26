@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour
 {
-    [SerializeField] GameObject[] targets;
-    [SerializeField] GameObject _field;
     void Update()
     {
-        if (targets.All(target => target.transform.position.y <= _field.transform.position.y))
+        if (GameObject.FindGameObjectsWithTag("Target").Length == 0)
         {
             SceneManager.LoadScene(1);
         }

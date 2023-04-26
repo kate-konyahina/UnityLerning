@@ -8,7 +8,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] private GameObject cannon;
     [SerializeField] private GameObject bullet;
-    [SerializeField] float force = 1f;
+    [SerializeField] public float force = 1f;
     [SerializeField] float speed = 500f;
     [SerializeField] float maxForce = 3000f;
 
