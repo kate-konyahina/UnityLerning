@@ -29,12 +29,11 @@ public class CharacterMove : MonoBehaviour
 
         if (_isAlive)
         {
-            transform.Rotate(Vector3.up, mouse * 10);
+            transform.Rotate(Vector3.up, horizontal*2);
 
             Move(horizontal, vertical, jump);
 
             if (Input.GetMouseButtonDown(0)) _animator.SetTrigger("IsPunching");
-            if (Input.GetKeyDown(KeyCode.Space)) _animator.SetTrigger("IsJumping");
         }
     }
 
@@ -61,7 +60,8 @@ public class CharacterMove : MonoBehaviour
                 if (jump != 0)
                 {
                     _velocity.y += _jumpForce;
-                }
+                _animator.SetTrigger("IsJumping");
+            }
             }
 
             _velocity.y += -9.81f * Time.deltaTime;

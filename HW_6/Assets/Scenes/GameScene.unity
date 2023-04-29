@@ -333,7 +333,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 514967801}
-  - component: {fileID: 514967800}
   - component: {fileID: 514967799}
   - component: {fileID: 514967802}
   - component: {fileID: 514967803}
@@ -361,20 +360,6 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!136 &514967800
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514967797}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &514967801
 Transform:
@@ -405,7 +390,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 571f108e00ccf7741b92e7d8afd1adaf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -940,7 +925,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855935819}
-  m_LocalRotation: {x: 0.27350518, y: -0.1205722, z: 0.034579642, w: 0.953657}
+  m_LocalRotation: {x: 0.27350518, y: -0.120572254, z: 0.034579616, w: 0.953657}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1750,7 +1735,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 3, z: 30}
+  m_Size: {x: 25, y: 3, z: 33}
   m_Center: {x: 0, y: -5, z: 5}
 --- !u!1 &1461384813
 GameObject:
@@ -2007,34 +1992,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1549388116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3df87f8d812f32042ac5d7f019ea5126, type: 3}
-  m_PrefabInstance: {fileID: 973319658}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1549388117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3df87f8d812f32042ac5d7f019ea5126, type: 3}
   m_PrefabInstance: {fileID: 973319658}
   m_PrefabAsset: {fileID: 0}
---- !u!143 &1549388120
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549388116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1588573776
 GameObject:
   m_ObjectHideFlags: 0
